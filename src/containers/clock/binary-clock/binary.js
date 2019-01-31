@@ -80,8 +80,6 @@ class BinaryClock extends Component {
           lights.push(
             <StyledLightWrapper key={j}>
               <StyledLight
-                lightId={j}
-                sectionId={i}
                 enabled={binaryClockValues[i][j] === "1" ? true : false}
               />
             </StyledLightWrapper>
