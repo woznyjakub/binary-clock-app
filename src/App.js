@@ -1,26 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import styled, { ThemeProvider } from "styled-components";
 
+import "./css/reset.css";
+import { theme } from "./css/theme";
+
+import { Heading } from "./components";
+
+import { Description } from "./containers";
+import { Clock } from "./containers";
+
+const StyledMainContainer = styled.div`
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding: 1.5rem 0.5rem;
+  background-color: ${({ theme }) => theme.colors.darkblue};
+  color: ${({ theme }) => theme.colors.lightgrey};
+`;
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <ThemeProvider theme={theme}>
+        <StyledMainContainer>
+          <Heading>Binary Clock</Heading>
+          <Clock />
+          <Description />
+        </StyledMainContainer>
+      </ThemeProvider>
     );
   }
 }
