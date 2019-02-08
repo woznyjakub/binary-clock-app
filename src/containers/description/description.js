@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Paragraph } from "../../components";
+import { Button, Paragraph } from "../../components";
 
-import { Button } from "../../components";
 const StyledWrapper = styled.div`
   max-width: 600px;
   margin: 0 auto;

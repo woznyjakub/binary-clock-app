@@ -5,9 +5,7 @@ import "./css/reset.css";
 import { theme } from "./css/theme";
 
 import { Heading } from "./components";
-
-import { Description } from "./containers";
-import { Clock } from "./containers";
+import { Clock, Description } from "./containers";
 
 const StyledMainContainer = styled.div`
   overflow-x: hidden;
