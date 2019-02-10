@@ -1,3 +1,4 @@
-My first react app project made using React, Styled Components.
+# binary-clock-app
+My first react app. This project uses CSS-in-JS library Styled Components.
 
 Live: https://woznyjakub.github.io/binary-clock-app/
